@@ -1,4 +1,4 @@
-This is experiment to get familiar with langchain and OpenAI API.
+This is an experiment to get familiar with langchain and OpenAI API.
 
 Currently, this application will generate code for given task for specified language. Run following command to generate output.
 For example,
