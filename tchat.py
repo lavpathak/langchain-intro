@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-chat = ChatOpenAI()
+chat = ChatOpenAI(verbose=True)
 
 # memory = ConversationBufferMemory(
 #     chat_memory=FileChatMessageHistory("messages.json"),
@@ -32,7 +32,8 @@ prompt = ChatPromptTemplate(
 chain = LLMChain(
     llm = chat,
     prompt = prompt,
-    memory=memory
+    memory=memory,
+    verbose=True
 )
 
 while True:
